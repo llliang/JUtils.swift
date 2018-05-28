@@ -23,12 +23,11 @@ class JTableViewCell : UITableViewCell {
     var iconImageView: UIImageView?
     var leftLabel: UILabel?
     var rightLabel: UILabel?
-    var arrowView: PArrowView?
+    var arrowView: JArrowView?
     
     init(style: PTableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
-        self.contentView.backgroundColor = UIColor.tintColor
         
         if style.contains(.default) {
             return
@@ -50,7 +49,7 @@ class JTableViewCell : UITableViewCell {
             leftLabel = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
             leftLabel?.font = UIFont.systemFont(ofSize: 14)
             leftLabel?.autoresizingMask = .flexibleHeight
-            leftLabel?.textColor = UIColor.titleColor
+            leftLabel?.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
             self.contentView.addSubview(leftLabel!)
             
             leftLabel?.addObserver(self, forKeyPath: "text", options: .new, context: nil)
@@ -59,7 +58,7 @@ class JTableViewCell : UITableViewCell {
         }
         
         if style.contains(.arrow) {
-            arrowView = PArrowView(frame: CGRect(x: UIScreen.main.bounds.width - 16 - 8, y: (self.height - 12)/2.0, width: 8, height: 12))
+            arrowView = JArrowView(frame: CGRect(x: UIScreen.main.bounds.width - 16 - 8, y: (self.height - 12)/2.0, width: 8, height: 12))
             arrowView?.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
             self.contentView.addSubview(arrowView!)
         }
@@ -69,7 +68,7 @@ class JTableViewCell : UITableViewCell {
             rightLabel = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
             rightLabel?.font = UIFont.systemFont(ofSize: 14)
             rightLabel?.autoresizingMask = .flexibleHeight
-            rightLabel?.textColor = UIColor.textColor
+            rightLabel?.textColor = UIColor.colorWith(hex: "666666", alpha: 1)
             rightLabel?.textAlignment = .right
             rightLabel?.numberOfLines = 0
             
@@ -107,7 +106,7 @@ class JTableViewCell : UITableViewCell {
     
 }
 
-class PArrowView: UIView {
+class JArrowView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         

@@ -13,8 +13,8 @@ class JNavigationController: UINavigationController, UIGestureRecognizerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.isTranslucent = false
-        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.titleColor, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)]
-        self.navigationBar.barTintColor = UIColor.tintColor
+        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.colorWith(hex: "333333", alpha: 1), NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)]
+//        self.navigationBar.barTintColor = UIColor.tintColor
         self.interactivePopGestureRecognizer?.delegate = self
     }
     

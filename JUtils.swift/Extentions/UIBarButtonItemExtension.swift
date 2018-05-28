@@ -24,7 +24,7 @@ extension UIBarButtonItem {
         let btn = UIButton(frame: CGRect(x: 0, y: 0, width: max(50, width), height: 44))
         btn.setTitle(title, for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        btn.setTitleColor(UIColor.titleColor, for: .normal)
+        btn.setTitleColor(UIColor.colorWith(hex: "333333", alpha: 1), for: .normal)
         btn.addTarget(target, action: action, for: .touchUpInside)
         
         switch style {

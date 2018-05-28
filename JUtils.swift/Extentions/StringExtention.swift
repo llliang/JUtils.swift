@@ -23,3 +23,18 @@ extension String {
         return String(self[self.startIndex..<self.index(self.startIndex, offsetBy: toIndex)])
     }
 }
+
+extension String {
+    func urlEncode() -> String {
+        return self.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+    }
+    func urlDecode() -> String {
+        return self.removingPercentEncoding!
+    }
+    
+    func size(font: UIFont, constrainedSize: CGSize) -> CGSize {
+        let nString = self as NSString
+        
+        return nString.boundingRect(with: constrainedSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font:font], context: nil).size
+    }
+}

@@ -19,7 +19,7 @@ extension UIAlertController {
                 let action = UIAlertAction(title: title, style: .default) { (_) in
                     handle(idx)
                 }
-                action.setValue(UIColor.greenColor, forKey: "titleTextColor")
+//                action.setValue(UIColor.greenColor, forKey: "titleTextColor")
                 self.addAction(action)
             }
         }
@@ -28,7 +28,7 @@ extension UIAlertController {
             let cancelAction = UIAlertAction(title: cancelTitle, style: .cancel) { (_) in
                 
             }
-            cancelAction.setValue(UIColor.greenColor, forKey: "titleTextColor")
+//            cancelAction.setValue(UIColor.greenColor, forKey: "titleTextColor")
             self.addAction(cancelAction)
         }
     }

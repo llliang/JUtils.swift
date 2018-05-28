@@ -67,7 +67,7 @@ class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshT
         let label = UILabel(frame: emptyView!.bounds.insetBy(dx: 0, dy: 100).offsetBy(dx: 0, dy: -100))
         label.autoresizingMask = emptyView!.autoresizingMask
         label.font = UIFont.systemFont(ofSize: 18)
-        label.textColor = UIColor.titleColor
+        label.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
         label.text = emptyText
         label.textAlignment = .center
         emptyView?.addSubview(label)

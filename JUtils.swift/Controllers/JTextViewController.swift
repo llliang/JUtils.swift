@@ -45,7 +45,7 @@ class JTextViewController: UIViewController, UITextViewDelegate {
         
         textView = JPlaceholderTextView(frame: CGRect(x: 0, y: 10, width: self.view.width, height: 120))
         textView?.font = font
-        textView?.backgroundColor = UIColor.tintColor
+        textView?.backgroundColor = UIColor.white
         textView?.contentInset = UIEdgeInsetsMake(10, 0, 20, 10)
         textView?.returnKeyType = UIReturnKeyType.done
         textView?.delegate = self
@@ -57,7 +57,7 @@ class JTextViewController: UIViewController, UITextViewDelegate {
             indicatingLabel = UILabel(frame: CGRect(x: 0, y: textView!.height - 20, width: textView!.width - 10, height: 20))
             indicatingLabel?.font = font
             indicatingLabel?.textAlignment = .right
-            indicatingLabel?.textColor = UIColor.textColor
+            indicatingLabel?.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
             self.view.addSubview(indicatingLabel!)
             indicatingLabel?.text = "\((maxCount*2 - self.lengthOfBytes(text: textView?.text))/2)"
         }

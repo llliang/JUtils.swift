@@ -26,7 +26,6 @@
 		3738752920BC2AD20091A22D /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */; };
 		3738752A20BC2AD20091A22D /* JHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751020BC2AD20091A22D /* JHud.swift */; };
 		3738752C20BC2AD20091A22D /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751220BC2AD20091A22D /* StringExtention.swift */; };
-		3738752D20BC2AD20091A22D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751320BC2AD20091A22D /* StringExtension.swift */; };
 		37CD61B420BC2F3F008BCAE0 /* JLoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */; };
 		B7054E52DE1452CCDCF469C0 /* Pods_JUtils_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3FC9B6A276FC87B67405E4 /* Pods_JUtils_swift.framework */; };
 /* End PBXBuildFile section */
@@ -54,7 +53,6 @@
 		3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		3738751020BC2AD20091A22D /* JHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHud.swift; sourceTree = "<group>"; };
 		3738751220BC2AD20091A22D /* StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
-		3738751320BC2AD20091A22D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLoadMoreView.swift; sourceTree = "<group>"; };
 		B46D92315CF2B0F28A7EE0B8 /* Pods-JUtils.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C210E7F6EFF28B78FBD44D4F /* Pods-JUtils.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,31 +94,23 @@
 				373874EC20BC2ABA0091A22D /* JUtils_swift.h */,
 				3738753120BC2C1B0091A22D /* Controllers */,
 				3738753020BC2B0E0091A22D /* Extentions */,
-				3738752F20BC2AF60091A22D /* Managers */,
 				3738753220BC2C2C0091A22D /* Views */,
-				3738750A20BC2AD20091A22D /* Util */,
+				3738750A20BC2AD20091A22D /* Utils */,
 				373874ED20BC2ABA0091A22D /* Info.plist */,
 			);
 			path = JUtils.swift;
 			sourceTree = "<group>";
 		};
-		3738750A20BC2AD20091A22D /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				373874FA20BC2AD20091A22D /* JDataModel.swift */,
-				3738751020BC2AD20091A22D /* JHud.swift */,
-				3738750920BC2AD20091A22D /* JEntity.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		3738752F20BC2AF60091A22D /* Managers */ = {
+		3738750A20BC2AD20091A22D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				373874F620BC2AD20091A22D /* JHttpManager.swift */,
 				373874F720BC2AD20091A22D /* JCacheManager.swift */,
+				373874FA20BC2AD20091A22D /* JDataModel.swift */,
+				3738751020BC2AD20091A22D /* JHud.swift */,
+				3738750920BC2AD20091A22D /* JEntity.swift */,
 			);
-			path = Managers;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3738753020BC2B0E0091A22D /* Extentions */ = {
@@ -132,7 +122,6 @@
 				3738750D20BC2AD20091A22D /* NSStringExtension.swift */,
 				3738750E20BC2AD20091A22D /* UIColorExtension.swift */,
 				3738751220BC2AD20091A22D /* StringExtention.swift */,
-				3738751320BC2AD20091A22D /* StringExtension.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -297,7 +286,6 @@
 				3738752420BC2AD20091A22D /* JEntity.swift in Sources */,
 				3738751C20BC2AD20091A22D /* JNavigationController.swift in Sources */,
 				37CD61B420BC2F3F008BCAE0 /* JLoadMoreView.swift in Sources */,
-				3738752D20BC2AD20091A22D /* StringExtension.swift in Sources */,
 				3738752820BC2AD20091A22D /* UIColorExtension.swift in Sources */,
 				3738751B20BC2AD20091A22D /* JTextFieldController.swift in Sources */,
 				3738752620BC2AD20091A22D /* UIViewExtention.swift in Sources */,

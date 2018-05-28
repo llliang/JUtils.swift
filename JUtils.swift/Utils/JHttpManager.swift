@@ -9,18 +9,6 @@
 import Foundation
 import Alamofire
 
-//let HostName = "http://localhost:3000"
-
-#if DEBUG
-    let production = false
-//let HostName = "http://192.168.3.92:3000" // 公司
-//let HostName = "http://192.168.0.103:3000" // 家
-    let HostName = "https://www.haomin.pub" // 生产
-#else
-    let production = true
-    let HostName = "https://www.haomin.pub" // 生产
-#endif
-
 class JHttpManager {
     
     struct Result {
@@ -37,11 +25,6 @@ class JHttpManager {
             params = Dictionary<String, String>()
         }
         
-//        let token = PUserSession.instance.session?.token
-//        if let _ = token {
-//            params!["token"] = token
-//        }
-        
         #if DEBUG
             var string = "?"// "?softversion=\(Util.appVersion())&systype=ios&sysversion=\(Util.systemVersion())"
             if let ps = params {
@@ -56,24 +39,24 @@ class JHttpManager {
                     string = string + key + "=" + value + "&"
                 }
             }
+        
             string = string.substring(toIndex: string.count - 1)
-            print(HostName + url + string)
+        
+            print(url + string)
         #endif
 
-        Alamofire.request((HostName + url), method:method, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+        Alamofire.request(url, method:method, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
             if response.result.isSuccess {
                 let result = response.result.value as! Dictionary<String, AnyObject>
                 if let status = result["status"] {
-//                    completion(nil, NSError(domain: result["exception"] as! String, code: status as! Int, userInfo: nil));
+
                     completion(Result(code: status as! Int, data: nil, message: result["exception"] as! String, error: NSError(domain: result["exception"] as! String, code: status as! Int, userInfo: nil)))
-                    JHud.show(content: result["exception"] as! String)
                 } else {
-//                   completion(result, nil)
                     completion(Result(code:Int(truncating: result["code"] as! NSNumber), data: result["data"], message: result["message"] as! String, error: nil))
                 }
             } else {
-                print(response.result.error.debugDescription) //
-//                completion(nil, NSError(domain: response.result.error.debugDescription, code: -100001, userInfo: nil))
+                print(response.result.error.debugDescription)
+
                 completion(Result(code: -100001, data: nil, message: "", error: NSError(domain: "连接服务器出错", code: -100001, userInfo: nil)))
             }
         }

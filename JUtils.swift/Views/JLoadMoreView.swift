@@ -19,7 +19,7 @@ class JLoadMoreView: JTableViewCell {
         stateLabel?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         stateLabel?.font = UIFont.systemFont(ofSize: 12)
         stateLabel?.textAlignment = .center
-        stateLabel?.textColor = UIColor.textColor
+        stateLabel?.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
         self.contentView.addSubview(stateLabel!)
     }
     

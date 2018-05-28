@@ -29,14 +29,14 @@ class JTextFieldController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let backView = UIView(frame: CGRect(x: 0, y: 10, width: self.view.width, height: 44))
-        backView.backgroundColor = UIColor.tintColor
+        backView.backgroundColor = UIColor.white
         self.view.addSubview(backView)
         
         textField = UITextField(frame: CGRect(x: 16, y: 0, width: backView.width - 32, height: backView.height))
         textField?.placeholder = placeholder
         textField?.text = text
         textField?.font = UIFont.systemFont(ofSize: 14)
-        textField?.textColor = UIColor.titleColor
+        textField?.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
         textField?.clearButtonMode = UITextFieldViewMode.whileEditing
         textField?.becomeFirstResponder()
         textField?.returnKeyType = UIReturnKeyType.done

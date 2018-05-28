@@ -79,7 +79,7 @@ class JPlaceholderTextView: UITextView {
         placeholderTextView = UITextView(frame: self.bounds)
         placeholderTextView!.isUserInteractionEnabled = false
         placeholderTextView!.font = self.font
-        placeholderTextView!.textColor = UIColor.placeholderColor
+        placeholderTextView!.textColor = UIColor.colorWith(hex: "666666", alpha: 0.7)
         placeholderTextView!.showsVerticalScrollIndicator = false
         placeholderTextView!.showsHorizontalScrollIndicator = false
         placeholderTextView!.isScrollEnabled = false
