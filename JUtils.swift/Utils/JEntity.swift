@@ -8,17 +8,17 @@
 
 import Foundation
 
-protocol JEntity: Codable {
+public protocol JEntity: Codable {
     func toJson() -> Data?
     static func toEntity<T>(data: T) -> Self
 }
 
 extension JEntity {
-    func toJson() -> Data? {
+    public func toJson() -> Data? {
         let encode = JSONEncoder()
         return try? encode.encode(self)
     }
-    static func toEntity<T>(data: T) -> Self {
+    public static func toEntity<T>(data: T) -> Self {
         let decoder = JSONDecoder()
         let objData = try? JSONSerialization.data(withJSONObject: data, options: JSONSerialization.WritingOptions.prettyPrinted)
         return try! decoder.decode(Self.self, from: objData!)

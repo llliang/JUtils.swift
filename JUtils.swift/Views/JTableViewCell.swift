@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JTableViewCell : UITableViewCell {
+open class JTableViewCell : UITableViewCell {
 
     struct PTableViewCellStyle: OptionSet {
         let rawValue: UInt
@@ -81,7 +81,7 @@ class JTableViewCell : UITableViewCell {
         }   
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if (object as! UILabel) == leftLabel {
 
             let width = NSString(string: leftLabel!.text!).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: leftLabel!.height), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: leftLabel!.font], context: nil).width
@@ -100,7 +100,7 @@ class JTableViewCell : UITableViewCell {
         return 50
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

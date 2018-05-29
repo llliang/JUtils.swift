@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-extension String {
+public extension String {
     func substring(fromIndex: Int) -> String {
         if fromIndex >= self.count {
             return ""
@@ -24,7 +25,7 @@ extension String {
     }
 }
 
-extension String {
+public extension String {
     func urlEncode() -> String {
         return self.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
     }

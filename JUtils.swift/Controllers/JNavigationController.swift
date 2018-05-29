@@ -9,9 +9,9 @@
 import UIKit
 import Foundation
 
-class JNavigationController: UINavigationController, UIGestureRecognizerDelegate {
+open class JNavigationController: UINavigationController, UIGestureRecognizerDelegate {
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.isTranslucent = false
         self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.colorWith(hex: "333333", alpha: 1), NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18)]
@@ -19,7 +19,7 @@ class JNavigationController: UINavigationController, UIGestureRecognizerDelegate
         self.interactivePopGestureRecognizer?.delegate = self
     }
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         return self.viewControllers.count > 1
     }
 }

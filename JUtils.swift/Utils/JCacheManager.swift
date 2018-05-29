@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import SQLite
 
-class JCacheManager: NSObject {
+open class JCacheManager: NSObject {
     
     static let instance = JCacheManager()
     

@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class JWebViewController: UIViewController, WKNavigationDelegate {
+open class JWebViewController: UIViewController, WKNavigationDelegate {
 
     var url: String?
     
@@ -20,7 +20,7 @@ class JWebViewController: UIViewController, WKNavigationDelegate {
         self.destroyWebView()
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         webView = WKWebView(frame: self.view.bounds)
@@ -50,19 +50,19 @@ class JWebViewController: UIViewController, WKNavigationDelegate {
         }
     }
     
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+    public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         JHud.showHudView(inView: self.view, lock: false)
     }
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         JHud.hide()
     }
     
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         JHud.show(content: error.localizedDescription)
     }
     
-    func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+    public func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
         JHud.hide()
     }
     

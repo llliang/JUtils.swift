@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class JDataModel<Element: JEntity, Type>: NSObject {
+open class JDataModel<Element: JEntity, Type>: NSObject {
     var code: NSInteger?
     var message: String?
     var data: Type?

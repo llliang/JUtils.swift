@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JTextViewController: UIViewController, UITextViewDelegate {
+open class JTextViewController: UIViewController, UITextViewDelegate {
 
     var maxCount: Int = 0
     
@@ -40,7 +40,7 @@ class JTextViewController: UIViewController, UITextViewDelegate {
         didBlock = block
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         textView = JPlaceholderTextView(frame: CGRect(x: 0, y: 10, width: self.view.width, height: 120))
@@ -63,7 +63,7 @@ class JTextViewController: UIViewController, UITextViewDelegate {
         }
     }
 
-    func  textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    public func  textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
             textView.resignFirstResponder()
             didBlock!(textView.text)
@@ -82,7 +82,7 @@ class JTextViewController: UIViewController, UITextViewDelegate {
         return true
     }
     
-    func textViewDidChange(_ textView: UITextView) {
+    public func textViewDidChange(_ textView: UITextView) {
    
         indicatingLabel?.text = "\((maxCount*2 - self.lengthOfBytes(text: textView.text))/2)"
     }

@@ -26,13 +26,44 @@
 		3738752920BC2AD20091A22D /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */; };
 		3738752A20BC2AD20091A22D /* JHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751020BC2AD20091A22D /* JHud.swift */; };
 		3738752C20BC2AD20091A22D /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751220BC2AD20091A22D /* StringExtention.swift */; };
+		373D269220BD4A25000FD211 /* JUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils.framework */; };
+		373D269320BD4A25000FD211 /* JUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37B1691920BD2E0B00223734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1691820BD2E0B00223734 /* AppDelegate.swift */; };
+		37B1691B20BD2E0B00223734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1691A20BD2E0B00223734 /* ViewController.swift */; };
+		37B1691E20BD2E0B00223734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1691C20BD2E0B00223734 /* Main.storyboard */; };
+		37B1692020BD2E0B00223734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B1691F20BD2E0B00223734 /* Assets.xcassets */; };
+		37B1692320BD2E0B00223734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1692120BD2E0B00223734 /* LaunchScreen.storyboard */; };
 		37CD61B420BC2F3F008BCAE0 /* JLoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */; };
 		B7054E52DE1452CCDCF469C0 /* Pods_JUtils_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3FC9B6A276FC87B67405E4 /* Pods_JUtils_swift.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		373D269420BD4A25000FD211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 373874E020BC2ABA0091A22D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 373874E820BC2ABA0091A22D;
+			remoteInfo = JUtils_swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		373D269620BD4A25000FD211 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				373D269320BD4A25000FD211 /* JUtils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2C3FC9B6A276FC87B67405E4 /* Pods_JUtils_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUtils_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		373874E920BC2ABA0091A22D /* JUtils_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JUtils_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373874E920BC2ABA0091A22D /* JUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373874EC20BC2ABA0091A22D /* JUtils_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUtils_swift.h; sourceTree = "<group>"; };
 		373874ED20BC2ABA0091A22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		373874F620BC2AD20091A22D /* JHttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHttpManager.swift; sourceTree = "<group>"; };
@@ -53,6 +84,13 @@
 		3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		3738751020BC2AD20091A22D /* JHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHud.swift; sourceTree = "<group>"; };
 		3738751220BC2AD20091A22D /* StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		37B1691620BD2E0B00223734 /* JUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B1691820BD2E0B00223734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37B1691A20BD2E0B00223734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37B1691D20BD2E0B00223734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37B1691F20BD2E0B00223734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37B1692220BD2E0B00223734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37B1692420BD2E0B00223734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLoadMoreView.swift; sourceTree = "<group>"; };
 		B46D92315CF2B0F28A7EE0B8 /* Pods-JUtils.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C210E7F6EFF28B78FBD44D4F /* Pods-JUtils.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37B1691320BD2E0B00223734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373D269220BD4A25000FD211 /* JUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				373874EB20BC2ABA0091A22D /* JUtils.swift */,
+				37B1691720BD2E0B00223734 /* JUtilsDemo */,
 				373874EA20BC2ABA0091A22D /* Products */,
 				488625965D44F9D4F0E73D3A /* Pods */,
 				391A152069A90A0E37D59724 /* Frameworks */,
@@ -83,7 +130,8 @@
 		373874EA20BC2ABA0091A22D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				373874E920BC2ABA0091A22D /* JUtils_swift.framework */,
+				373874E920BC2ABA0091A22D /* JUtils.framework */,
+				37B1691620BD2E0B00223734 /* JUtilsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,41 +140,16 @@
 			isa = PBXGroup;
 			children = (
 				373874EC20BC2ABA0091A22D /* JUtils_swift.h */,
-				3738753120BC2C1B0091A22D /* Controllers */,
-				3738753020BC2B0E0091A22D /* Extentions */,
-				3738753220BC2C2C0091A22D /* Views */,
-				3738750A20BC2AD20091A22D /* Utils */,
+				373D268E20BD43B4000FD211 /* Controllers */,
+				373D268F20BD43C4000FD211 /* Extensions */,
+				373D269020BD43D4000FD211 /* Views */,
+				373D269120BD43E7000FD211 /* Utils */,
 				373874ED20BC2ABA0091A22D /* Info.plist */,
 			);
 			path = JUtils.swift;
 			sourceTree = "<group>";
 		};
-		3738750A20BC2AD20091A22D /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				373874F620BC2AD20091A22D /* JHttpManager.swift */,
-				373874F720BC2AD20091A22D /* JCacheManager.swift */,
-				373874FA20BC2AD20091A22D /* JDataModel.swift */,
-				3738751020BC2AD20091A22D /* JHud.swift */,
-				3738750920BC2AD20091A22D /* JEntity.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		3738753020BC2B0E0091A22D /* Extentions */ = {
-			isa = PBXGroup;
-			children = (
-				3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */,
-				3738750B20BC2AD20091A22D /* UIAlertControllerExtension.swift */,
-				3738750C20BC2AD20091A22D /* UIViewExtention.swift */,
-				3738750D20BC2AD20091A22D /* NSStringExtension.swift */,
-				3738750E20BC2AD20091A22D /* UIColorExtension.swift */,
-				3738751220BC2AD20091A22D /* StringExtention.swift */,
-			);
-			path = Extentions;
-			sourceTree = "<group>";
-		};
-		3738753120BC2C1B0091A22D /* Controllers */ = {
+		373D268E20BD43B4000FD211 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				373874FF20BC2AD20091A22D /* JNavigationController.swift */,
@@ -138,7 +161,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		3738753220BC2C2C0091A22D /* Views */ = {
+		373D268F20BD43C4000FD211 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */,
+				3738750B20BC2AD20091A22D /* UIAlertControllerExtension.swift */,
+				3738750C20BC2AD20091A22D /* UIViewExtention.swift */,
+				3738750D20BC2AD20091A22D /* NSStringExtension.swift */,
+				3738750E20BC2AD20091A22D /* UIColorExtension.swift */,
+				3738751220BC2AD20091A22D /* StringExtention.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		373D269020BD43D4000FD211 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3738750420BC2AD20091A22D /* JTableViewCell.swift */,
@@ -146,6 +182,31 @@
 				37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		373D269120BD43E7000FD211 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				373874F620BC2AD20091A22D /* JHttpManager.swift */,
+				373874F720BC2AD20091A22D /* JCacheManager.swift */,
+				373874FA20BC2AD20091A22D /* JDataModel.swift */,
+				3738751020BC2AD20091A22D /* JHud.swift */,
+				3738750920BC2AD20091A22D /* JEntity.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		37B1691720BD2E0B00223734 /* JUtilsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				37B1691820BD2E0B00223734 /* AppDelegate.swift */,
+				37B1691A20BD2E0B00223734 /* ViewController.swift */,
+				37B1691C20BD2E0B00223734 /* Main.storyboard */,
+				37B1691F20BD2E0B00223734 /* Assets.xcassets */,
+				37B1692120BD2E0B00223734 /* LaunchScreen.storyboard */,
+				37B1692420BD2E0B00223734 /* Info.plist */,
+			);
+			path = JUtilsDemo;
 			sourceTree = "<group>";
 		};
 		391A152069A90A0E37D59724 /* Frameworks */ = {
@@ -179,9 +240,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		373874E820BC2ABA0091A22D /* JUtils_swift */ = {
+		373874E820BC2ABA0091A22D /* JUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils_swift" */;
+			buildConfigurationList = 373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils" */;
 			buildPhases = (
 				27A5028D5E6D6111D1A51F15 /* [CP] Check Pods Manifest.lock */,
 				373874E420BC2ABA0091A22D /* Sources */,
@@ -194,10 +255,29 @@
 			);
 			dependencies = (
 			);
-			name = JUtils_swift;
+			name = JUtils;
 			productName = JUtils.swift;
-			productReference = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */;
+			productReference = 373874E920BC2ABA0091A22D /* JUtils.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		37B1691520BD2E0B00223734 /* JUtilsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B1692720BD2E0C00223734 /* Build configuration list for PBXNativeTarget "JUtilsDemo" */;
+			buildPhases = (
+				37B1691220BD2E0B00223734 /* Sources */,
+				37B1691320BD2E0B00223734 /* Frameworks */,
+				37B1691420BD2E0B00223734 /* Resources */,
+				373D269620BD4A25000FD211 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				373D269520BD4A25000FD211 /* PBXTargetDependency */,
+			);
+			name = JUtilsDemo;
+			productName = JUtilsDemo;
+			productReference = 37B1691620BD2E0B00223734 /* JUtilsDemo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -205,10 +285,14 @@
 		373874E020BC2ABA0091A22D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Jiang Liang";
 				TargetAttributes = {
 					373874E820BC2ABA0091A22D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					37B1691520BD2E0B00223734 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
@@ -219,13 +303,15 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 373874DF20BC2ABA0091A22D;
 			productRefGroup = 373874EA20BC2ABA0091A22D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				373874E820BC2ABA0091A22D /* JUtils_swift */,
+				373874E820BC2ABA0091A22D /* JUtils */,
+				37B1691520BD2E0B00223734 /* JUtilsDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +321,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B1691420BD2E0B00223734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B1692320BD2E0B00223734 /* LaunchScreen.storyboard in Resources */,
+				37B1692020BD2E0B00223734 /* Assets.xcassets in Resources */,
+				37B1691E20BD2E0B00223734 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +399,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37B1691220BD2E0B00223734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B1691B20BD2E0B00223734 /* ViewController.swift in Sources */,
+				37B1691920BD2E0B00223734 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		373D269520BD4A25000FD211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 373874E820BC2ABA0091A22D /* JUtils */;
+			targetProxy = 373D269420BD4A25000FD211 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37B1691C20BD2E0B00223734 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B1691D20BD2E0B00223734 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37B1692120BD2E0B00223734 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B1692220BD2E0B00223734 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		373874EF20BC2ABA0091A22D /* Debug */ = {
@@ -446,6 +578,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangliang.JUtils-swift";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -473,10 +606,49 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiangliang.JUtils-swift";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		37B1692520BD2E0B00223734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57ZK8687SF;
+				INFOPLIST_FILE = JUtilsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangliang.JUtilsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37B1692620BD2E0B00223734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57ZK8687SF;
+				INFOPLIST_FILE = JUtilsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangliang.JUtilsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -492,11 +664,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils_swift" */ = {
+		373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				373874F220BC2ABA0091A22D /* Debug */,
 				373874F320BC2ABA0091A22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37B1692720BD2E0C00223734 /* Build configuration list for PBXNativeTarget "JUtilsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B1692520BD2E0B00223734 /* Debug */,
+				37B1692620BD2E0B00223734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

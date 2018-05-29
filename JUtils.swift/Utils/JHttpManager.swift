@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class JHttpManager {
+open class JHttpManager {
     
     struct Result {
         var code: Int

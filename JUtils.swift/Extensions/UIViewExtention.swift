@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
 
     var origin: CGPoint {
         set (newOrigin) {

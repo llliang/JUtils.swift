@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension NSString {
+public extension NSString {
     func size(withFont font: UIFont, constrainedSize: CGSize) -> CGSize {
         return self.boundingRect(with: constrainedSize, options: .usesLineFragmentOrigin, attributes:[NSAttributedStringKey.font : font], context: nil).size
     }

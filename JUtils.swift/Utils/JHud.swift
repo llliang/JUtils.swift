@@ -17,7 +17,7 @@ let defaultHudWidth: CGFloat = UIScreen.main.bounds.width*2/5
 
 // MARK: ----
 
-class JHud {
+open class JHud {
     static let instance = JHud()
     
     var window: UIWindow?

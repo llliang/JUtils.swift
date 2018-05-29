@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JPlaceholderTextView: UITextView {
+open class JPlaceholderTextView: UITextView {
     
     var lineSpacing: CGFloat = 0 {
         didSet {
@@ -34,7 +34,7 @@ class JPlaceholderTextView: UITextView {
         }
     }
     
-    override var contentInset: UIEdgeInsets {
+    override open var contentInset: UIEdgeInsets {
         didSet {
             placeholderTextView?.contentInset = contentInset
         }
@@ -42,13 +42,13 @@ class JPlaceholderTextView: UITextView {
     
     var placeholderTextView: UITextView?
     
-    override var font: UIFont? {
+    override open var font: UIFont? {
         didSet {
             placeholderTextView?.font = font
         }
     }
     
-    override var attributedText: NSAttributedString! {
+    override open var attributedText: NSAttributedString! {
         didSet {
             placeholderTextView?.isHidden = (attributedText != nil) && attributedText.length > 0
         }
@@ -98,7 +98,7 @@ class JPlaceholderTextView: UITextView {
         placeholderTextView?.isHidden = (self.text != nil) && self.text.count > 0
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIBarButtonItem {
+public extension UIBarButtonItem {
     
     enum PBarButtonItemStyle {
         case left

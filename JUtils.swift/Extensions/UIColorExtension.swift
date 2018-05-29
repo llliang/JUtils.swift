@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     class func colorWith(hex:String) -> UIColor {
         return processColorWith(hex: hex, alpha: 1)
     }

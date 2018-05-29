@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JTextFieldController: UIViewController, UITextFieldDelegate {
+open class JTextFieldController: UIViewController, UITextFieldDelegate {
     
     var maxCount: Int = 0
     
@@ -26,7 +26,7 @@ class JTextFieldController: UIViewController, UITextFieldDelegate {
     
     private var textField: UITextField?
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         let backView = UIView(frame: CGRect(x: 0, y: 10, width: self.view.width, height: 44))
         backView.backgroundColor = UIColor.white
@@ -54,7 +54,7 @@ class JTextFieldController: UIViewController, UITextFieldDelegate {
         didBlock = block
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField.markedTextRange == nil {
             if self.lengthOfBytes(text: textField.text) + self.lengthOfBytes(text: string) > maxCount*2 && string != "" {
                 return false
@@ -68,7 +68,7 @@ class JTextFieldController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         didBlock!(textField.text!)
         self.navigationController?.popViewController(animated: true)

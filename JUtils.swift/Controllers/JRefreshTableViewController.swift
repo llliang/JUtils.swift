@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol JRefreshTableViewControllerProtocol : NSObjectProtocol {
+public protocol JRefreshTableViewControllerProtocol : NSObjectProtocol {
     
     func refreshTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
@@ -17,7 +17,7 @@ protocol JRefreshTableViewControllerProtocol : NSObjectProtocol {
     func refreshTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
 }
 
-class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshTableViewControllerProtocol, UITableViewDelegate, UITableViewDataSource {
+open class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshTableViewControllerProtocol, UITableViewDelegate, UITableViewDataSource {
     
     var tableView: UITableView?
     
@@ -36,7 +36,7 @@ class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshT
        return JDataModel()
     }()
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         self.layoutSubviews()
         self.loadData()
@@ -73,14 +73,14 @@ class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshT
         emptyView?.addSubview(label)
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         if dataModel.canLoadMore {
             return 2
         }
         return 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if 1 == indexPath.section {
             return loadMoreView!
         }
@@ -95,25 +95,25 @@ class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshT
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if 1 == section {
             return 1
         }
         return dataModel.itemCount
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.refreshTableView(tableView, didSelectRowAt: indexPath)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if 1 == indexPath.section {
            return 50
         }
         return self.refreshTableView(tableView, heightForRowAt: indexPath)
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
         let offset_Y = scrollView.contentOffset.y
 //        print("offset = \(offset_Y)")
@@ -172,15 +172,15 @@ class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshT
         })
     }
     
-    func refreshTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func refreshTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
     
-    func refreshTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    open func refreshTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
     
-    func refreshTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    open func refreshTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
 }
