@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JUtils.swift"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "easy to use for jl"
   s.swift_version = "4.0"
 
@@ -92,7 +92,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JUtils.swift/*.h"
+  s.source_files  = "JUtils.swift/*"
+  # s.source_files  = "JUtils.swift/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   s.subspec 'Controllers' do |controllers|

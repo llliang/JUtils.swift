@@ -179,9 +179,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		373874E820BC2ABA0091A22D /* JUtils.swift */ = {
+		373874E820BC2ABA0091A22D /* JUtils_swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils.swift" */;
+			buildConfigurationList = 373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils_swift" */;
 			buildPhases = (
 				27A5028D5E6D6111D1A51F15 /* [CP] Check Pods Manifest.lock */,
 				373874E420BC2ABA0091A22D /* Sources */,
@@ -194,7 +194,7 @@
 			);
 			dependencies = (
 			);
-			name = JUtils.swift;
+			name = JUtils_swift;
 			productName = JUtils.swift;
 			productReference = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */;
 			productType = "com.apple.product-type.framework";
@@ -225,7 +225,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				373874E820BC2ABA0091A22D /* JUtils.swift */,
+				373874E820BC2ABA0091A22D /* JUtils_swift */,
 			);
 		};
 /* End PBXProject section */
@@ -492,7 +492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils.swift" */ = {
+		373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils_swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				373874F220BC2ABA0091A22D /* Debug */,
