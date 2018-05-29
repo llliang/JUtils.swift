@@ -141,7 +141,7 @@
 			children = (
 				373874EC20BC2ABA0091A22D /* JUtils_swift.h */,
 				373D268E20BD43B4000FD211 /* Controllers */,
-				373D268F20BD43C4000FD211 /* Extensions */,
+				373D268F20BD43C4000FD211 /* Extentions */,
 				373D269020BD43D4000FD211 /* Views */,
 				373D269120BD43E7000FD211 /* Utils */,
 				373874ED20BC2ABA0091A22D /* Info.plist */,
@@ -161,7 +161,7 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		373D268F20BD43C4000FD211 /* Extensions */ = {
+		373D268F20BD43C4000FD211 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
 				3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */,
@@ -171,7 +171,7 @@
 				3738750E20BC2AD20091A22D /* UIColorExtension.swift */,
 				3738751220BC2AD20091A22D /* StringExtention.swift */,
 			);
-			path = Extensions;
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		373D269020BD43D4000FD211 /* Views */ = {
