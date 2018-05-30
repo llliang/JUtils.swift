@@ -10,22 +10,25 @@ import UIKit
 
 open class JTableViewCell : UITableViewCell {
 
-    struct PTableViewCellStyle: OptionSet {
-        let rawValue: UInt
+    public struct PTableViewCellStyle: OptionSet {
+        public let rawValue: UInt
         
-        static let `default` = PTableViewCellStyle(rawValue: 1 << 0)
-        static let icon = PTableViewCellStyle(rawValue: 1 << 1)
-        static let description = PTableViewCellStyle(rawValue: 1 << 2)
-        static let content = PTableViewCellStyle(rawValue: 1 << 3)
-        static let arrow = PTableViewCellStyle(rawValue: 1 << 4)
+        public init(rawValue: UInt) {
+            self.rawValue = rawValue
+        }
+        public static let `default` = PTableViewCellStyle(rawValue: 1 << 0)
+        public static let icon = PTableViewCellStyle(rawValue: 1 << 1)
+        public static let description = PTableViewCellStyle(rawValue: 1 << 2)
+        public static let content = PTableViewCellStyle(rawValue: 1 << 3)
+        public static let arrow = PTableViewCellStyle(rawValue: 1 << 4)
     }
     
-    var iconImageView: UIImageView?
-    var leftLabel: UILabel?
-    var rightLabel: UILabel?
+    public var iconImageView: UIImageView?
+    public var leftLabel: UILabel?
+    public var rightLabel: UILabel?
     var arrowView: JArrowView?
     
-    init(style: PTableViewCellStyle, reuseIdentifier: String?) {
+    public init(style: PTableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
         
@@ -96,7 +99,7 @@ open class JTableViewCell : UITableViewCell {
         }
     }
     
-    class func cellHeight(with: Any?) -> CGFloat {
+    open class func cellHeight(with: Any?) -> CGFloat {
         return 50
     }
     

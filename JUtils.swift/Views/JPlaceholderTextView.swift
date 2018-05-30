@@ -10,7 +10,7 @@ import UIKit
 
 open class JPlaceholderTextView: UITextView {
     
-    var lineSpacing: CGFloat = 0 {
+    public var lineSpacing: CGFloat = 0 {
         didSet {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = lineSpacing
@@ -23,12 +23,12 @@ open class JPlaceholderTextView: UITextView {
         NotificationCenter.default.removeObserver(self)
     }
     
-    var placeholder: String? {
+    public var placeholder: String? {
         didSet {
             placeholderTextView?.text = placeholder
         }
     }
-    var placeholderColor: UIColor? {
+    public var placeholderColor: UIColor? {
         didSet {
             placeholderTextView?.textColor = placeholderColor
         }
@@ -40,7 +40,7 @@ open class JPlaceholderTextView: UITextView {
         }
     }
     
-    var placeholderTextView: UITextView?
+    public var placeholderTextView: UITextView?
     
     override open var font: UIFont? {
         didSet {
@@ -74,7 +74,7 @@ open class JPlaceholderTextView: UITextView {
 //
 //    }
   
-    init(frame: CGRect) {
+    public init(frame: CGRect) {
         super.init(frame: frame, textContainer: nil)
         placeholderTextView = UITextView(frame: self.bounds)
         placeholderTextView!.isUserInteractionEnabled = false

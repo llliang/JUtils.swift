@@ -14,10 +14,12 @@ public protocol JEntity: Codable {
 }
 
 extension JEntity {
+    
     public func toJson() -> Data? {
         let encode = JSONEncoder()
         return try? encode.encode(self)
     }
+    
     public static func toEntity<T>(data: T) -> Self {
         let decoder = JSONDecoder()
         let objData = try? JSONSerialization.data(withJSONObject: data, options: JSONSerialization.WritingOptions.prettyPrinted)

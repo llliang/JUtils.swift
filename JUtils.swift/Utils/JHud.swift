@@ -18,7 +18,7 @@ let defaultHudWidth: CGFloat = UIScreen.main.bounds.width*2/5
 // MARK: ----
 
 open class JHud {
-    static let instance = JHud()
+    public static let instance = JHud()
     
     var window: UIWindow?
     var containerView: UIView?
@@ -42,46 +42,46 @@ open class JHud {
     }
     
     // 简单的显示
-    class func show(content: String) {
+    public class func show(content: String) {
         self.show(image: nil, content: content, withTime: defaultTime, lock: false, inView: nil)
     }
     
     // 是否禁止操作  lock 锁住操作
-    class func show(content: String, lock: Bool) {
+    public class func show(content: String, lock: Bool) {
         self.show(image: nil, content: content, withTime: defaultTime, lock: lock, inView: nil)
     }
     
     // 规定时间
-    class func show(content: String, withTime: Float) {
+    public class func show(content: String, withTime: Float) {
         self.show(image: nil, content: content, withTime: withTime, lock: false, inView: nil)
     }
     
     //
-    class func show(content: String, withTime: Float, inView: UIView) {
+    public class func show(content: String, withTime: Float, inView: UIView) {
         self.show(image: nil, content: content, withTime: withTime, lock: false, inView: inView)
         
     }
     
     // 图片
-    class func show(image: UIImage) {
+    public class func show(image: UIImage) {
         self.show(image: image, content: nil, withTime: defaultTime, lock: false, inView: nil)
     }
     
-    class func show(image: UIImage, content: String, withTime: Float) {
+    public class func show(image: UIImage, content: String, withTime: Float) {
         self.show(image: image, content: content, withTime: withTime, lock: false, inView: nil)
     }
     
-    class func show(image: UIImage?, content: String?, withTime: Float, lock: Bool, inView: UIView?) {
+    public class func show(image: UIImage?, content: String?, withTime: Float, lock: Bool, inView: UIView?) {
         self.instance.show(image: image, activity: false, content: content, withTime: withTime, lock: lock, inView: inView)
     }
     
     
     // 菊花
-    class func showHudView(inView: UIView, lock: Bool) {
+    public class func showHudView(inView: UIView, lock: Bool) {
         self.instance.show(image: nil, activity: true, content: nil, withTime: -1, lock: lock, inView: inView)
     }
     
-    class func hide() {
+    public class func hide() {
         self.instance.hide()
     }
     

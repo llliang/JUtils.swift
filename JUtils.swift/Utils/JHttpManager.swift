@@ -11,14 +11,14 @@ import Alamofire
 
 open class JHttpManager {
     
-    struct Result {
+    public struct Result {
         var code: Int
         var data: Any?
         var message: String
         var error: NSError?
     }
     
-    class func requestAsynchronous(url: String, method: HTTPMethod, parameters: Dictionary<String, Any>?,completion: @escaping (_ data: Result) -> ()) {
+    open class func requestAsynchronous(url: String, method: HTTPMethod, parameters: Dictionary<String, Any>?,completion: @escaping (_ data: Result) -> ()) {
       
         var params = parameters
         if params == nil {

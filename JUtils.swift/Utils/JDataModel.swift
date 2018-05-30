@@ -10,14 +10,14 @@ import UIKit
 import Alamofire
 
 open class JDataModel<Element: JEntity, Type>: NSObject {
-    var code: NSInteger?
-    var message: String?
-    var data: Type?
-    var cacheKey: String?
+    open var code: NSInteger?
+    open var message: String?
+    open var data: Type?
+    open var cacheKey: String?
     
-    var loading: Bool = false
-    var canLoadMore: Bool = false
-    var isReload: Bool = true {
+    public var loading: Bool = false
+    public var canLoadMore: Bool = false
+    public var isReload: Bool = true {
         didSet {
             if isReload {
                 self.page = 1
@@ -25,19 +25,19 @@ open class JDataModel<Element: JEntity, Type>: NSObject {
         }
     }
     
-    var limited: NSInteger = 20
-    var page: NSInteger = 1
+    public var limited: NSInteger = 20
+    public var page: NSInteger = 1
     
-    var method: HTTPMethod = .get
-    var url: String?
-    var params = Dictionary<String, Any>()
+    public var method: HTTPMethod = .get
+    public var url: String?
+    public var params = Dictionary<String, Any>()
     
-    var itemCount: NSInteger = 0
+    public var itemCount: NSInteger = 0
     
-    typealias StartBlock = () -> ()
-    typealias FinishedBlock = (_ data: Type?, _ error: NSError?) -> ()
+    public typealias StartBlock = () -> ()
+    public typealias FinishedBlock = (_ data: Type?, _ error: NSError?) -> ()
     
-    func load(start: StartBlock, finished: @escaping FinishedBlock) {
+    open func load(start: StartBlock, finished: @escaping FinishedBlock) {
         if !loading {
             start()
             loading = true
@@ -64,7 +64,7 @@ open class JDataModel<Element: JEntity, Type>: NSObject {
         }
     }
     
-    func parse(source: AnyObject?) {
+    open func parse(source: AnyObject?) {
         if source is Array<Any> {
             
             let array = source as! Array<Any>
@@ -104,7 +104,7 @@ open class JDataModel<Element: JEntity, Type>: NSObject {
         }
     }
     
-    func item(ofIndex: NSInteger) -> JEntity {
+    public func item(ofIndex: NSInteger) -> JEntity {
         if data is Array<JEntity> {
             let tmp = data as! Array<JEntity>
             return tmp[ofIndex]

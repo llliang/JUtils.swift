@@ -10,15 +10,15 @@ import UIKit
 
 open class JTextFieldController: UIViewController, UITextFieldDelegate {
     
-    var maxCount: Int = 0
+    public var maxCount: Int = 0
     
-    var placeholder: String? {
+    public var placeholder: String? {
         didSet {
             textField?.placeholder = placeholder
         }
     }
     
-    var text: String? {
+    public var text: String? {
         didSet {
             textField?.text = text
         }
@@ -46,9 +46,9 @@ open class JTextFieldController: UIViewController, UITextFieldDelegate {
         textField?.delegate = self
     }
     
-    typealias DidBlock = (_ text: String) -> ()
+    public typealias DidBlock = (_ text: String) -> ()
     
-    var didBlock: DidBlock?
+    public var didBlock: DidBlock?
     
     func didText(block: @escaping DidBlock) {
         didBlock = block

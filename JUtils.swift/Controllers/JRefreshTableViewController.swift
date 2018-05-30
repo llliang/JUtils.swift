@@ -19,20 +19,20 @@ public protocol JRefreshTableViewControllerProtocol : NSObjectProtocol {
 
 open class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRefreshTableViewControllerProtocol, UITableViewDelegate, UITableViewDataSource {
     
-    var tableView: UITableView?
+    open var tableView: UITableView?
     
-    var loadMoreView: JLoadMoreView?
+    open var loadMoreView: JLoadMoreView?
     
     /// 数据为0时显示
     private var emptyView: UIView?
     
-    var emptyText: String = "暂无数据"
+    open var emptyText: String = "暂无数据"
     
     lazy var refreshControl: UIRefreshControl = {
         return UIRefreshControl()
     }()
     
-    var dataModel: JDataModel<E, Type> = {
+    open var dataModel: JDataModel<E, Type> = {
        return JDataModel()
     }()
     
@@ -73,14 +73,14 @@ open class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRef
         emptyView?.addSubview(label)
     }
     
-    public func numberOfSections(in tableView: UITableView) -> Int {
+    open func numberOfSections(in tableView: UITableView) -> Int {
         if dataModel.canLoadMore {
             return 2
         }
         return 1
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if 1 == indexPath.section {
             return loadMoreView!
         }
@@ -102,18 +102,18 @@ open class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRef
         return dataModel.itemCount
     }
     
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.refreshTableView(tableView, didSelectRowAt: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if 1 == indexPath.section {
            return 50
         }
         return self.refreshTableView(tableView, heightForRowAt: indexPath)
     }
     
-    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
         let offset_Y = scrollView.contentOffset.y
 //        print("offset = \(offset_Y)")
@@ -150,12 +150,12 @@ open class JRefreshTableViewController<E: JEntity, Type>: UIViewController, JRef
         return true
     }
     
-    @objc func refresh() {
+    @objc open func refresh() {
         dataModel.isReload = true
         self.loadData()
     }
     
-    func loadData() {
+    open func loadData() {
     
         dataModel.load(start: {
             

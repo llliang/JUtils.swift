@@ -10,9 +10,9 @@ import UIKit
 
 open class JLoadMoreView: JTableViewCell {
     
-    var stateLabel: UILabel?
+    open var stateLabel: UILabel?
     
-    override init(style: PTableViewCellStyle, reuseIdentifier: String?) {
+    public override init(style: PTableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         
         stateLabel = UILabel(frame: self.bounds)

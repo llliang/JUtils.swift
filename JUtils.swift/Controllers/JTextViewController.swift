@@ -10,19 +10,19 @@ import UIKit
 
 open class JTextViewController: UIViewController, UITextViewDelegate {
 
-    var maxCount: Int = 0
+    open var maxCount: Int = 0
     
     var indicatingLabel: UILabel?
     
-    var placeholder: String? {
+    open var placeholder: String? {
         didSet {
             textView?.placeholder = placeholder
         }
     }
     
-    var font = UIFont.systemFont(ofSize: 14)
+    open var font = UIFont.systemFont(ofSize: 14)
     
-    var text: String? {
+    open var text: String? {
         didSet {
             textView?.text = text
         }
@@ -32,9 +32,9 @@ open class JTextViewController: UIViewController, UITextViewDelegate {
     
     private var countLabel: UILabel?
     
-    typealias DidBlock = (_ text: String) -> ()
+    public typealias DidBlock = (_ text: String) -> ()
     
-    var didBlock: DidBlock?
+    public var didBlock: DidBlock?
     
     func didText(block: @escaping DidBlock) {
         didBlock = block

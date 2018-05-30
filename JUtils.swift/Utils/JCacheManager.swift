@@ -12,7 +12,7 @@ import SQLite
 
 open class JCacheManager: NSObject {
     
-    static let instance = JCacheManager()
+    public static let instance = JCacheManager()
     
     let key = Expression<String>("key")
     let data = Expression<String>("data")
@@ -29,7 +29,7 @@ open class JCacheManager: NSObject {
       _ = try? db?.run(kvTable.filter(expire < Date()).delete())
     }
        
-     lazy var db: Connection? = {
+    lazy var db: Connection? = {
         let documentPath: NSString = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as NSString
         let path = documentPath.appendingPathComponent("cache") as String
         print("path = \(path)")
@@ -40,6 +40,7 @@ open class JCacheManager: NSObject {
         
         return try? Connection(path + "/db.sqlite3")
     }()
+    
     // 键值对数据库
     var kvTable = Table("kvTable")
     
@@ -53,7 +54,7 @@ open class JCacheManager: NSObject {
 //        }
 //    }
     
-    func setCache<T: JEntity>(cache: T, forKey: String) -> Bool {
+    public func setCache<T: JEntity>(cache: T, forKey: String) -> Bool {
         let d = cache.toJson()
         let string = String(data: d!, encoding: String.Encoding.utf8)
         do {
@@ -65,7 +66,7 @@ open class JCacheManager: NSObject {
         }
     }
     
-    func removeCache(forKey: String) {
+    public func removeCache(forKey: String) {
         do {
             try db?.run(kvTable.filter(key == forKey).delete())
         } catch {
@@ -73,7 +74,7 @@ open class JCacheManager: NSObject {
         }
     }
     
-    func cache<T: Codable>(forKey: String) -> T? {
+    public func cache<T: Codable>(forKey: String) -> T? {
         let read = kvTable.filter(key == forKey)
         var results = Array<Row>()
         for item in (try! db?.prepare(read))! {

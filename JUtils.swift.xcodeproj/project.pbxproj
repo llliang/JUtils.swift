@@ -26,8 +26,8 @@
 		3738752920BC2AD20091A22D /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */; };
 		3738752A20BC2AD20091A22D /* JHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751020BC2AD20091A22D /* JHud.swift */; };
 		3738752C20BC2AD20091A22D /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751220BC2AD20091A22D /* StringExtention.swift */; };
-		373D269220BD4A25000FD211 /* JUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils.framework */; };
-		373D269320BD4A25000FD211 /* JUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		373D269220BD4A25000FD211 /* JUtils_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */; };
+		373D269320BD4A25000FD211 /* JUtils_swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37B1691920BD2E0B00223734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1691820BD2E0B00223734 /* AppDelegate.swift */; };
 		37B1691B20BD2E0B00223734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1691A20BD2E0B00223734 /* ViewController.swift */; };
 		37B1691E20BD2E0B00223734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1691C20BD2E0B00223734 /* Main.storyboard */; };
@@ -54,7 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				373D269320BD4A25000FD211 /* JUtils.framework in Embed Frameworks */,
+				373D269320BD4A25000FD211 /* JUtils_swift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 
 /* Begin PBXFileReference section */
 		2C3FC9B6A276FC87B67405E4 /* Pods_JUtils_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUtils_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		373874E920BC2ABA0091A22D /* JUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373874E920BC2ABA0091A22D /* JUtils_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JUtils_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373874EC20BC2ABA0091A22D /* JUtils_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUtils_swift.h; sourceTree = "<group>"; };
 		373874ED20BC2ABA0091A22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		373874F620BC2AD20091A22D /* JHttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHttpManager.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373D269220BD4A25000FD211 /* JUtils.framework in Frameworks */,
+				373D269220BD4A25000FD211 /* JUtils_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 		373874EA20BC2ABA0091A22D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				373874E920BC2ABA0091A22D /* JUtils.framework */,
+				373874E920BC2ABA0091A22D /* JUtils_swift.framework */,
 				37B1691620BD2E0B00223734 /* JUtilsDemo.app */,
 			);
 			name = Products;
@@ -240,9 +240,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		373874E820BC2ABA0091A22D /* JUtils */ = {
+		373874E820BC2ABA0091A22D /* JUtils.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils" */;
+			buildConfigurationList = 373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils.swift" */;
 			buildPhases = (
 				27A5028D5E6D6111D1A51F15 /* [CP] Check Pods Manifest.lock */,
 				373874E420BC2ABA0091A22D /* Sources */,
@@ -255,9 +255,9 @@
 			);
 			dependencies = (
 			);
-			name = JUtils;
+			name = JUtils.swift;
 			productName = JUtils.swift;
-			productReference = 373874E920BC2ABA0091A22D /* JUtils.framework */;
+			productReference = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		37B1691520BD2E0B00223734 /* JUtilsDemo */ = {
@@ -310,7 +310,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				373874E820BC2ABA0091A22D /* JUtils */,
+				373874E820BC2ABA0091A22D /* JUtils.swift */,
 				37B1691520BD2E0B00223734 /* JUtilsDemo */,
 			);
 		};
@@ -413,7 +413,7 @@
 /* Begin PBXTargetDependency section */
 		373D269520BD4A25000FD211 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 373874E820BC2ABA0091A22D /* JUtils */;
+			target = 373874E820BC2ABA0091A22D /* JUtils.swift */;
 			targetProxy = 373D269420BD4A25000FD211 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -664,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils" */ = {
+		373874F120BC2ABA0091A22D /* Build configuration list for PBXNativeTarget "JUtils.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				373874F220BC2ABA0091A22D /* Debug */,

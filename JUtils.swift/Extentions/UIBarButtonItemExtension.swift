@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIBarButtonItem {
     
-    enum PBarButtonItemStyle {
+    public enum PBarButtonItemStyle {
         case left
         case center
         case right

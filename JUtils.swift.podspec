@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "JUtils"
+  s.name         = "JUtils.swift"
   s.version      = "0.0.4"
   s.summary      = "easy to use for jl"
   s.swift_version = "4.0"

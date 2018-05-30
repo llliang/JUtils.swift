@@ -11,7 +11,7 @@ import WebKit
 
 open class JWebViewController: UIViewController, WKNavigationDelegate {
 
-    var url: String?
+    public var url: String?
     
     private var webView: WKWebView?
     
