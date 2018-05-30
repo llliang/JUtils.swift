@@ -113,4 +113,7 @@ open class JDataModel<Element: JEntity, Type>: NSObject {
         }
     }
     
+    required override public init() {
+        
+    }
 }

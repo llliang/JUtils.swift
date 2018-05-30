@@ -33,6 +33,7 @@
 		37B1691E20BD2E0B00223734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1691C20BD2E0B00223734 /* Main.storyboard */; };
 		37B1692020BD2E0B00223734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B1691F20BD2E0B00223734 /* Assets.xcassets */; };
 		37B1692320BD2E0B00223734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1692120BD2E0B00223734 /* LaunchScreen.storyboard */; };
+		37BEC7A220BE501A00C0E261 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BEC7A120BE501A00C0E261 /* BaseViewController.swift */; };
 		37CD61B420BC2F3F008BCAE0 /* JLoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */; };
 		B7054E52DE1452CCDCF469C0 /* Pods_JUtils_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3FC9B6A276FC87B67405E4 /* Pods_JUtils_swift.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		37B1691F20BD2E0B00223734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B1692220BD2E0B00223734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B1692420BD2E0B00223734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37BEC7A120BE501A00C0E261 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLoadMoreView.swift; sourceTree = "<group>"; };
 		B46D92315CF2B0F28A7EE0B8 /* Pods-JUtils.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C210E7F6EFF28B78FBD44D4F /* Pods-JUtils.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				37B1691820BD2E0B00223734 /* AppDelegate.swift */,
 				37B1691A20BD2E0B00223734 /* ViewController.swift */,
+				37BEC7A120BE501A00C0E261 /* BaseViewController.swift */,
 				37B1691C20BD2E0B00223734 /* Main.storyboard */,
 				37B1691F20BD2E0B00223734 /* Assets.xcassets */,
 				37B1692120BD2E0B00223734 /* LaunchScreen.storyboard */,
@@ -405,6 +408,7 @@
 			files = (
 				37B1691B20BD2E0B00223734 /* ViewController.swift in Sources */,
 				37B1691920BD2E0B00223734 /* AppDelegate.swift in Sources */,
+				37BEC7A220BE501A00C0E261 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
