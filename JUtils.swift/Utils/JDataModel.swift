@@ -104,12 +104,12 @@ open class JDataModel<Element: JEntity, Type>: NSObject {
         }
     }
     
-    public func item(ofIndex: NSInteger) -> JEntity {
+    public func item(ofIndex: NSInteger) -> Element {
         if data is Array<JEntity> {
-            let tmp = data as! Array<JEntity>
+            let tmp = data as! Array<Element>
             return tmp[ofIndex]
         } else {
-            return data as! JEntity
+            return data as! Element
         }
     }
     

@@ -17,7 +17,7 @@ public protocol JRefreshTableViewControllerProtocol : NSObjectProtocol {
     func refreshTableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
 }
 
-open class JRefreshTableViewController<E: JEntity, Type, D: JDataModel<E, Any>>: UIViewController, JRefreshTableViewControllerProtocol, UITableViewDelegate, UITableViewDataSource {
+open class JRefreshTableViewController<E: JEntity, Type, D: JDataModel<E, Type>>: UIViewController, JRefreshTableViewControllerProtocol, UITableViewDelegate, UITableViewDataSource {
     
     open var tableView: UITableView?
     
