@@ -23,21 +23,21 @@ open class JTableViewCell : UITableViewCell {
         public static let arrow = PTableViewCellStyle(rawValue: 1 << 4)
     }
     
-    public var iconImageView: UIImageView? {
+    open var iconImageView: UIImageView? {
         let imgV = UIImageView(frame: CGRect(x: left, y: (self.height - 20.0)/2.0, width: 20.0, height: 20.0))
         imgV.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
         imgV.layer.masksToBounds = true
         imgV.contentMode = .scaleAspectFill
         return imgV
     }
-    public var leftLabel: UILabel? {
+    open var leftLabel: UILabel? {
         let label = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
         label.font = UIFont.systemFont(ofSize: 14)
         label.autoresizingMask = .flexibleHeight
         label.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
         return label
     }
-    public var rightLabel: UILabel? {
+    open var rightLabel: UILabel? {
         let rLabel = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
         rLabel.font = UIFont.systemFont(ofSize: 14)
         rLabel.autoresizingMask = .flexibleHeight
@@ -46,6 +46,7 @@ open class JTableViewCell : UITableViewCell {
         rLabel.numberOfLines = 0
         return rLabel
     }
+    
     var arrowView: JArrowView?
     
     public init(style: PTableViewCellStyle, reuseIdentifier: String?) {

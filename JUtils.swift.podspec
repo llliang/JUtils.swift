@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JUtils.swift"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "easy to use for jl"
   s.swift_version = "4.0"
 
