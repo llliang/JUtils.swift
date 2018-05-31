@@ -11,13 +11,13 @@ import UIKit
 
 public extension UIBarButtonItem {
     
-    public enum PBarButtonItemStyle {
+    public enum JBarButtonItemStyle {
         case left
         case center
         case right
     }
     
-    convenience init(title: String, titleColor: UIColor, style: PBarButtonItemStyle, target: Any, action: Selector) {
+    convenience init(title: String, titleColor: UIColor, style: JBarButtonItemStyle, target: Any, action: Selector) {
         
         let t = title as NSString
         let width: CGFloat = t.boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: 44.0), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16)], context: nil).width
@@ -38,7 +38,7 @@ public extension UIBarButtonItem {
         self.init(customView: btn)
     }
     
-    convenience init(image: UIImage, style: PBarButtonItemStyle, target: Any, action: Selector) {
+    convenience init(image: UIImage, style: JBarButtonItemStyle, target: Any, action: Selector) {
         
         let width = image.size.width*34/image.size.height
         

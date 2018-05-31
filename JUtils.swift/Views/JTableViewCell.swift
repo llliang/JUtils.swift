@@ -23,9 +23,29 @@ open class JTableViewCell : UITableViewCell {
         public static let arrow = PTableViewCellStyle(rawValue: 1 << 4)
     }
     
-    public var iconImageView: UIImageView?
-    public var leftLabel: UILabel?
-    public var rightLabel: UILabel?
+    public var iconImageView: UIImageView? {
+        let imgV = UIImageView(frame: CGRect(x: left, y: (self.height - 20.0)/2.0, width: 20.0, height: 20.0))
+        imgV.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
+        imgV.layer.masksToBounds = true
+        imgV.contentMode = .scaleAspectFill
+        return imgV
+    }
+    public var leftLabel: UILabel? {
+        let label = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.autoresizingMask = .flexibleHeight
+        label.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
+        return label
+    }
+    public var rightLabel: UILabel? {
+        let rLabel = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
+        rLabel.font = UIFont.systemFont(ofSize: 14)
+        rLabel.autoresizingMask = .flexibleHeight
+        rLabel.textColor = UIColor.colorWith(hex: "666666", alpha: 1)
+        rLabel.textAlignment = .right
+        rLabel.numberOfLines = 0
+        return rLabel
+    }
     var arrowView: JArrowView?
     
     public init(style: PTableViewCellStyle, reuseIdentifier: String?) {
@@ -39,20 +59,12 @@ open class JTableViewCell : UITableViewCell {
         var left: CGFloat = 16.0
         
         if style.contains(.icon) {
-            iconImageView = UIImageView(frame: CGRect(x: left, y: (self.height - 20.0)/2.0, width: 20.0, height: 20.0))
-            iconImageView?.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
-            iconImageView?.layer.masksToBounds = true
-            iconImageView?.contentMode = .scaleAspectFill
             self.contentView.addSubview(iconImageView!)
             left += 20 + 10
         }
         
         if style.contains(.description) {
             
-            leftLabel = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
-            leftLabel?.font = UIFont.systemFont(ofSize: 14)
-            leftLabel?.autoresizingMask = .flexibleHeight
-            leftLabel?.textColor = UIColor.colorWith(hex: "333333", alpha: 1)
             self.contentView.addSubview(leftLabel!)
             
             leftLabel?.addObserver(self, forKeyPath: "text", options: .new, context: nil)
@@ -67,13 +79,6 @@ open class JTableViewCell : UITableViewCell {
         }
         
         if style.contains(.content) {
-            
-            rightLabel = UILabel(frame: CGRect(x: left, y: 0, width: 0, height: self.height))
-            rightLabel?.font = UIFont.systemFont(ofSize: 14)
-            rightLabel?.autoresizingMask = .flexibleHeight
-            rightLabel?.textColor = UIColor.colorWith(hex: "666666", alpha: 1)
-            rightLabel?.textAlignment = .right
-            rightLabel?.numberOfLines = 0
             
             if let v = arrowView {
                 rightLabel?.width = v.left - leftLabel!.right - 20
