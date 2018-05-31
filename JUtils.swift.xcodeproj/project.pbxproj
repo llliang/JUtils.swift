@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A10CA5FAF49D22060F8694 /* Pods_JUtilsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AAF403109621B0F759DDAE /* Pods_JUtilsDemo.framework */; };
+		372588E120BFD9B2005E7527 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 372588E020BFD9B1005E7527 /* placeholder.jpg */; };
+		372588E220BFD9DE005E7527 /* JUtils_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */; };
+		372588E320BFD9DE005E7527 /* JUtils_swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		373874EE20BC2ABA0091A22D /* JUtils_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 373874EC20BC2ABA0091A22D /* JUtils_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3738751520BC2AD20091A22D /* JHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373874F620BC2AD20091A22D /* JHttpManager.swift */; };
 		3738751620BC2AD20091A22D /* JCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373874F720BC2AD20091A22D /* JCacheManager.swift */; };
 		3738751820BC2AD20091A22D /* JDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373874FA20BC2AD20091A22D /* JDataModel.swift */; };
 		3738751B20BC2AD20091A22D /* JTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373874FE20BC2AD20091A22D /* JTextFieldController.swift */; };
-		3738751C20BC2AD20091A22D /* JNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373874FF20BC2AD20091A22D /* JNavigationController.swift */; };
 		3738751D20BC2AD20091A22D /* JWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738750020BC2AD20091A22D /* JWebViewController.swift */; };
 		3738751E20BC2AD20091A22D /* JTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738750120BC2AD20091A22D /* JTextViewController.swift */; };
 		3738751F20BC2AD20091A22D /* JRefreshTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738750220BC2AD20091A22D /* JRefreshTableViewController.swift */; };
@@ -26,8 +29,6 @@
 		3738752920BC2AD20091A22D /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738750F20BC2AD20091A22D /* UIBarButtonItemExtension.swift */; };
 		3738752A20BC2AD20091A22D /* JHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751020BC2AD20091A22D /* JHud.swift */; };
 		3738752C20BC2AD20091A22D /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738751220BC2AD20091A22D /* StringExtention.swift */; };
-		373D269220BD4A25000FD211 /* JUtils_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */; };
-		373D269320BD4A25000FD211 /* JUtils_swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 373874E920BC2ABA0091A22D /* JUtils_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37B1691920BD2E0B00223734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1691820BD2E0B00223734 /* AppDelegate.swift */; };
 		37B1691B20BD2E0B00223734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1691A20BD2E0B00223734 /* ViewController.swift */; };
 		37B1691E20BD2E0B00223734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B1691C20BD2E0B00223734 /* Main.storyboard */; };
@@ -39,23 +40,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		373D269420BD4A25000FD211 /* PBXContainerItemProxy */ = {
+		372588E420BFD9DE005E7527 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 373874E020BC2ABA0091A22D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 373874E820BC2ABA0091A22D;
-			remoteInfo = JUtils_swift;
+			remoteInfo = JUtils.swift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		373D269620BD4A25000FD211 /* Embed Frameworks */ = {
+		372588E620BFD9DE005E7527 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				373D269320BD4A25000FD211 /* JUtils_swift.framework in Embed Frameworks */,
+				372588E320BFD9DE005E7527 /* JUtils_swift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +64,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00EA43F43583AF144C950E43 /* Pods-JUtilsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JUtilsDemo/Pods-JUtilsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		14AAF403109621B0F759DDAE /* Pods_JUtilsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUtilsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3FC9B6A276FC87B67405E4 /* Pods_JUtils_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUtils_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		372588E020BFD9B1005E7527 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		373874E920BC2ABA0091A22D /* JUtils_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JUtils_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373874EC20BC2ABA0091A22D /* JUtils_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUtils_swift.h; sourceTree = "<group>"; };
 		373874ED20BC2ABA0091A22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +75,6 @@
 		373874F720BC2AD20091A22D /* JCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCacheManager.swift; sourceTree = "<group>"; };
 		373874FA20BC2AD20091A22D /* JDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDataModel.swift; sourceTree = "<group>"; };
 		373874FE20BC2AD20091A22D /* JTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTextFieldController.swift; sourceTree = "<group>"; };
-		373874FF20BC2AD20091A22D /* JNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JNavigationController.swift; sourceTree = "<group>"; };
 		3738750020BC2AD20091A22D /* JWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWebViewController.swift; sourceTree = "<group>"; };
 		3738750120BC2AD20091A22D /* JTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTextViewController.swift; sourceTree = "<group>"; };
 		3738750220BC2AD20091A22D /* JRefreshTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRefreshTableViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		37CD61B320BC2F3F008BCAE0 /* JLoadMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLoadMoreView.swift; sourceTree = "<group>"; };
 		B46D92315CF2B0F28A7EE0B8 /* Pods-JUtils.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C210E7F6EFF28B78FBD44D4F /* Pods-JUtils.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtils.swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift.release.xcconfig"; sourceTree = "<group>"; };
+		E2C3BD1EF282BF3D74BBB688 /* Pods-JUtilsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JUtilsDemo/Pods-JUtilsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373D269220BD4A25000FD211 /* JUtils_swift.framework in Frameworks */,
+				372588E220BFD9DE005E7527 /* JUtils_swift.framework in Frameworks */,
+				04A10CA5FAF49D22060F8694 /* Pods_JUtilsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +159,6 @@
 		373D268E20BD43B4000FD211 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				373874FF20BC2AD20091A22D /* JNavigationController.swift */,
 				373874FE20BC2AD20091A22D /* JTextFieldController.swift */,
 				3738750120BC2AD20091A22D /* JTextViewController.swift */,
 				3738750020BC2AD20091A22D /* JWebViewController.swift */,
@@ -202,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				37B1691820BD2E0B00223734 /* AppDelegate.swift */,
+				372588E020BFD9B1005E7527 /* placeholder.jpg */,
 				37B1691A20BD2E0B00223734 /* ViewController.swift */,
 				37BEC7A120BE501A00C0E261 /* BaseViewController.swift */,
 				37B1691C20BD2E0B00223734 /* Main.storyboard */,
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				2C3FC9B6A276FC87B67405E4 /* Pods_JUtils_swift.framework */,
+				14AAF403109621B0F759DDAE /* Pods_JUtilsDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +231,8 @@
 			children = (
 				B46D92315CF2B0F28A7EE0B8 /* Pods-JUtils.swift.debug.xcconfig */,
 				C210E7F6EFF28B78FBD44D4F /* Pods-JUtils.swift.release.xcconfig */,
+				00EA43F43583AF144C950E43 /* Pods-JUtilsDemo.debug.xcconfig */,
+				E2C3BD1EF282BF3D74BBB688 /* Pods-JUtilsDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -252,7 +260,6 @@
 				373874E520BC2ABA0091A22D /* Frameworks */,
 				373874E620BC2ABA0091A22D /* Headers */,
 				373874E720BC2ABA0091A22D /* Resources */,
-				7ABB58D68976889B704E032B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,15 +274,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37B1692720BD2E0C00223734 /* Build configuration list for PBXNativeTarget "JUtilsDemo" */;
 			buildPhases = (
+				2968BE3E1BCA8CB2FD9A9145 /* [CP] Check Pods Manifest.lock */,
 				37B1691220BD2E0B00223734 /* Sources */,
 				37B1691320BD2E0B00223734 /* Frameworks */,
 				37B1691420BD2E0B00223734 /* Resources */,
-				373D269620BD4A25000FD211 /* Embed Frameworks */,
+				372588E620BFD9DE005E7527 /* Embed Frameworks */,
+				C96BADB9CA7CB254656112F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				373D269520BD4A25000FD211 /* PBXTargetDependency */,
+				372588E520BFD9DE005E7527 /* PBXTargetDependency */,
 			);
 			name = JUtilsDemo;
 			productName = JUtilsDemo;
@@ -332,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B1692320BD2E0B00223734 /* LaunchScreen.storyboard in Resources */,
+				372588E120BFD9B2005E7527 /* placeholder.jpg in Resources */,
 				37B1692020BD2E0B00223734 /* Assets.xcassets in Resources */,
 				37B1691E20BD2E0B00223734 /* Main.storyboard in Resources */,
 			);
@@ -358,19 +368,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7ABB58D68976889B704E032B /* [CP] Copy Pods Resources */ = {
+		2968BE3E1BCA8CB2FD9A9145 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JUtilsDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JUtils.swift/Pods-JUtils.swift-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C96BADB9CA7CB254656112F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JUtilsDemo/Pods-JUtilsDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.3/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift-iOS11.3/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS10.0/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift-iOS10.0/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JUtilsDemo/Pods-JUtilsDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -383,7 +418,6 @@
 				3738751D20BC2AD20091A22D /* JWebViewController.swift in Sources */,
 				3738751520BC2AD20091A22D /* JHttpManager.swift in Sources */,
 				3738752420BC2AD20091A22D /* JEntity.swift in Sources */,
-				3738751C20BC2AD20091A22D /* JNavigationController.swift in Sources */,
 				37CD61B420BC2F3F008BCAE0 /* JLoadMoreView.swift in Sources */,
 				3738752820BC2AD20091A22D /* UIColorExtension.swift in Sources */,
 				3738751B20BC2AD20091A22D /* JTextFieldController.swift in Sources */,
@@ -415,10 +449,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		373D269520BD4A25000FD211 /* PBXTargetDependency */ = {
+		372588E520BFD9DE005E7527 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 373874E820BC2ABA0091A22D /* JUtils.swift */;
-			targetProxy = 373D269420BD4A25000FD211 /* PBXContainerItemProxy */;
+			targetProxy = 372588E420BFD9DE005E7527 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,6 +654,7 @@
 		};
 		37B1692520BD2E0B00223734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00EA43F43583AF144C950E43 /* Pods-JUtilsDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -639,6 +674,7 @@
 		};
 		37B1692620BD2E0B00223734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C3BD1EF282BF3D74BBB688 /* Pods-JUtilsDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
